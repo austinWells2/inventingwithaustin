@@ -1,0 +1,20 @@
+.profile{
+    float: right;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.profile-pic{
+    float: left;
+    width: 30%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.profile-pic img{
+    max-width: 100%;
+    height: auto;
+}
