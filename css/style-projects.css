@@ -50,4 +50,9 @@
     height: auto;
 }
 
+/*3-wide picture panel*/
+.pictures-3panel{
+    max-width: 100%;
+    height: auto;
+}
 
