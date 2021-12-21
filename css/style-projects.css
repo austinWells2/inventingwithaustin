@@ -23,22 +23,20 @@
 }
 
 .project-item{
-    float: right;
-    left: 70%;
-    width: 40%;
+    left:30%;
+    width: 70%;
     padding: 0 30px;
     box-sizing: border-box;
 }
 
 .project-item p{
-    float: left;
-    width: 60%
+    left:30%;
+    width: 40%
 }
 
 .project-item ul{
-    float: right;
-    width: 40%;
-    color: #333;
+    left:70%;
+    width: 30%;
     padding: 0 30px;
     box-sizing: border-box;
 }
