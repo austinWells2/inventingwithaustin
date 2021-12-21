@@ -23,7 +23,7 @@
 }
 
 .project-item{
-    float: right;
+    float: none;
     width: 40%;
     padding: 0 30px;
     box-sizing: border-box;
