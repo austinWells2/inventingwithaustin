@@ -34,8 +34,14 @@
     float: left;
     left: 70%;
     width: 30%;
+    color: #333;
     padding: 0 30px;
     box-sizing: border-box;
+}
+
+.project-listing ul{
+    padding: 0;
+    list-style: none;
 }
 
 .project-listing a{
