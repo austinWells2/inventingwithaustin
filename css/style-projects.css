@@ -23,7 +23,7 @@
 }
 
 .project-item{
-/*    float: left;  */
+    float: right;
     left: 30%;
     width: 40%;
     padding: 0 30px;
@@ -31,8 +31,7 @@
 }
 
 .project-listing{
-/*    float: left;  */
-    left: 70%;
+    float: right;
     width: 30%;
     color: #333;
     padding: 0 30px;
