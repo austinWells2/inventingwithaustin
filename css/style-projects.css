@@ -31,12 +31,12 @@
 
 .project-listing{
     float: left;
-    width: 60%;
+    width: 30;
     padding: 0 30px;
     box-sizing: border-box;
 }
 
-.project-listingPic{
+.project-pic{
     float: left;
     width: 30%;
     background: #333;
@@ -45,7 +45,7 @@
     box-sizing: border-box;
 }
 
-.project-listingPic img{
+.project-pic img{
     max-width: 100%;
     height: auto;
 }
