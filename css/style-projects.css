@@ -30,20 +30,21 @@
     box-sizing: border-box;
 }
 
-.project-listing{
-    float: right;
+.project-item p{
+    float: left;
+    width: 60%
+}
+
+.project-item ul{
+    left: 60%;
     width: 40%;
     color: #333;
     padding: 0 30px;
     box-sizing: border-box;
-}
-
-.project-listing ul{
-    padding: 0;
     list-style: none;
 }
 
-.project-listing a{
+.project-item a{
     color: #333;
     text-decoration: none;
     font-size: 18px;
@@ -51,7 +52,7 @@
     padding-left: 8px;
 }
 
-.project-listing a:hover{
+.project-item a:hover{
     font-weight: 700; 
 }
 
