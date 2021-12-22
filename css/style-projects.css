@@ -3,7 +3,6 @@
     float:left;
     width: 100%;
     color: #555;
-    padding-left: 10%;
     border-bottom-style: solid;
     border-color: #333;
 }
@@ -11,8 +10,12 @@
 #project-main{
     float: right;
     width: 80%;
-    padding: 0 30px;
+    padding: 0px 30px;
     box-sizing: border-box;
+}
+
+#project-main h2{
+    padding-top: 60px;
 }
 
 #project-sidebar{
