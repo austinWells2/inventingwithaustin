@@ -140,6 +140,7 @@
 
 .video{
     width: 100%;
+    height: 56.25vw;
     background: #ddd;
     border-left-style: solid;
     border-left-width: 10px;
