@@ -23,8 +23,9 @@
 }
 
 .project{
-    width: 80%;
-    margin:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
     padding: 5px 0px;
 }
 
@@ -65,5 +66,15 @@
 .project-pic img{
     max-width: 100%;
     height: auto;
+}
+
+.picture-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #999;
+    border-left-style: solid;
+    border-color: #333;
+    margin: 5px;
 }
 
