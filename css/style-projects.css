@@ -29,6 +29,13 @@
     box-sizing: border-box;
 }
 
+.project-item h1{
+    margin: 0px 0px;
+    padding: 10px 0px;
+    border-bottom-style: solid;
+    border-color: #333;
+}
+
 .project-item p{
     float: left;
     width: 60%;
