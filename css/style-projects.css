@@ -9,7 +9,8 @@
 
 #project-main{
     float: right;
-    width: 80%;
+    width: 70%;
+    margin-right: 10%;
     padding: 0px 30px;
     box-sizing: border-box;
 }
@@ -100,7 +101,7 @@
 
 .picture-center{
     width: 100%;
-    background: #ddd;
+    background-color: #ddd;
     border-left-style: solid;
     border-left-width: 10px;
     border-color: #333;
@@ -120,14 +121,35 @@
     text-align: center;
 }
 
-.picture-row{
+.picture-3row{
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: #999;
+    background-color: #ddd;
     border-left-style: solid;
     border-left-width: 10px;
     border-color: #333;
-    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.picture-3row img{
+    width: 32%;
+    margin-left: 1%;
+}
+
+.video{
+    width: 100%;
+    background: #ddd;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-color: #333;
+    padding: 10px;
+    box-sizing: border-box;   
+}
+
+.video iframe{
+    margin-left: 20%;
+    width: 60%; 
 }
 
