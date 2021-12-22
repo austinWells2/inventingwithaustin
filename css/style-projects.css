@@ -29,6 +29,17 @@
     box-sizing: border-box;
 }
 
+.project-item p{
+    float: left;
+    width: 60%;
+}
+
+.project-item ul{
+    float: left;
+    width: 33%;
+    font-size: 14px;
+}
+
 .project-pic{
     float: left;
     width: 30%;
