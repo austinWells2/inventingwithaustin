@@ -19,6 +19,10 @@
     padding-top: 60px;
 }
 
+#project-main h3{
+    font-style: italic;
+}
+
 #project-sidebar{
     float: left;
     width: 20%;
@@ -41,6 +45,11 @@
     padding-bottom: 5px;
     border-bottom-style: solid;
     border-color: #d4332a;
+}
+
+#project-sidebar p{
+    color: #d4332a;
+    font-weight: 700;
 }
 
 #project-sidebar a{
@@ -136,6 +145,23 @@
 .picture-3row img{
     width: 32%;
     margin-left: 1%;
+}
+
+.picture-4row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ddd;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-color: #333;
+    padding: 10px;
+    box-sizing: border-box;    
+}
+
+.picture-4row{
+    width: 23%;
+    margin-left: 1%;    
 }
 
 .video{

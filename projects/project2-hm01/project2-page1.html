@@ -2,9 +2,9 @@
 <html>
     <head>
         <!---###Page Name###-->
-        <title>Project-6DoFRobotArmMkI</title>
-        <link rel="stylesheet" type="text/css" href="../css/style-main.css">
-        <link rel="stylesheet" type="text/css" href="../css/style-projects.css">
+        <title>HM01 - Page 1</title>
+        <link rel="stylesheet" type="text/css" href="../../css/style-main.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style-projects.css">
     </head>
 
     <body>
@@ -19,30 +19,121 @@
         <nav id="navbar">
             <div class="container">
                 <ul>
-                    <li><a href = "../index.html">Home</a></li>
-                    <li><a href = "../profiles-main.html">About</a></li>
-                    <li><a href = "projects/projects-main.html">Projects</a></li>
-                    <li><a href = "../blog.html">Blog</a></li>
+                    <li><a href = "../../index.html">Home</a></li>
+                    <li><a href = "../../profiles-main.html">About</a></li>
+                    <li><a href = "../projects-main.html">Projects</a></li>
+                    <li><a href = "../../blog.html">Blog</a></li>
                 </ul>
             </div>
         </nav>
 
         <!--Place Main Content Here-->
-        <div id="project-name">
-            <h1>6-DoF Robot Arm Mk I</h1>
-            <h4>A hurried, humble begining...</h4>
-        </div>
+        <div class="project">
+            <div id="project-main">
+                <section id="project-name">
+                    <h1>Hybrid Fabrication Machine HM01</h1>
+                </section>
 
-        <div id="project-main">
-            <h2>Part 1 - Origin</h2>
-            <h5>[Post Date]</h5>
-        </div>
+                <h2>Part 1 - The Monster Appears</h2>
+                <h5>Austin Wells - January 20, 2021</h5>
+                
+                <img class="picture-center" src="photos/hm01-v3.2main.png" alt="computer model of hm01">
 
-        <div id="project-sidebar">
-            <h2>Posts</h2>
-            <ul>
-                <li><a href="mjhkk"></a></li>
-            </ul>
+                <h3>Whoa! That's a lot of aluminum extrusion...</h3>
+                <p>
+                    Now that I have you attention, I'll explain what you see, where it came from, and 
+                    where it's headed (and no, it isn't headed to engineering hell quite yet).
+                </p>
+
+                <h4>Description</h4>
+
+                <p>
+                    Pictured above is an incomplete rendering of the HM01 hybrid fabrication machine. 
+                    It is a cartesian robot capable of additive and subtractive manufacturing operations. 
+                    What does all of that mean? Let me break it down...
+                </p>
+
+                <ul>
+                    <li><b>Cartesian</b>: The machine is capable of motion in three orthogonal axis. Most 3d 
+                        printers and 3-axis milling machines are cartesian machines</li>
+                    <li><b>Additive manufacture</b>: Any process by which an object is fabricated through 
+                        the successive addition of material. The most prevalent example of this is the 
+                        humble FDM 3d printer.</li>
+                    <li><b>Subtractive manufacture</b>: Any process by which an object is fabricated through 
+                        the successive removal of material. Instead of adding material in the shape of 
+                        your part, material is removed from a larger piece of material. Lathes, laser cutters, 
+                        and milling machines are common examples of subtractive manufacturing methods.</li>
+                </ul>
+
+                <p>
+                    That is where the H (hybrid) in HM01 comes from. The HM01 is a hybrid system, meaning that 
+                    it can can extrude material to make a part, cut away material to make a part, or both. My 
+                    ultimate goal is to be able to extrude a few layers of filament, return with a milling tool 
+                    to reduce the edge of the layer to a higher degree of precision, and then repeat until a relatively 
+                    precise part (by 3d printing standards) is complete.
+                </p>
+
+                <p>
+                    The system itself is constructed with a t-slotted aluminum frame to house the motion, power, 
+                    control, and tool systems. The print bed moves in the z-axis, driven by three (almost) equidistant 
+                    LEAD screws powered by a stepper motor and constrained in the transverse plane by two brass bushings 
+                    riding on linear guide rods. Motion in the x-axis is provided by two stepper motors driving parallel 
+                    LEAD screws to position the tool carriage. This tool carriage is otherwise free to slide along the 
+                    gantry beam using sleeve bearings. Motion in the y-axis is similarly provided by two stepper motors 
+                    driving parallel LEAD screws to position the gantry slides along extrusion rails. Not pictured above 
+                    is the Titan aero extruder used for FDM, the variable-speed spindle and motor (still deciding on a 
+                    model), heated print bed, z-axis belt, and controller board (I'm using a FYSETC S6 v1.2), as well 
+                    as a few switches, pulleys, and fittings. Overall the system is 26" x 20" x 19.25", has a motion box 
+                    of 13.5" x 9.1" x 9.5", and weighs in at over 60 lb (>27 kg). Over engineered? Probably. Future proofed 
+                    with room for improvement? Definitely.
+                </p>
+
+                <h4>Origin</h4>
+
+                <p>
+                    It all started at the onset of the Covid-19 lockdowns, after all the students at NC State were sent 
+                    home. Away from the reactor and unable to work from home, I found myself with plenty of time to design 
+                    things but none of the tools to build them. I could have bought a 3d printer, but I had always wanted to 
+                    apply what I had learned repairing them and build my own. Additionally, I remained unconvinced that 3d 
+                    printers could print reasonably accurate mating surfaces and was less than impressed with the strength and 
+                    durability of PLA. A CNC mill was desired but I had a 'better' idea: why not have a machine that can do both. 
+                    Obviously, it must not be an incredible idea since I had found very few examples of others on the internet doing 
+                    the same, but I'm special and surely I won't have a problem with it (so I thought). So I set out to design a 
+                    cartesian machine capable of three degrees of linear motion with the ability to change tools, even mid-program.
+                </p>
+
+                <p>
+                    I was aware of many of the problems I would face, especially on the firmware/software end of things, but 
+                    I've always figured things out in the past and this time will be no different. The first image is a rendering 
+                    of the design as it stands January 18th, 2021. Everything in orange was designed to be 3d-printed in university 
+                    makerspaces. However, these were closed to students during the fall semester, redirecting students to 3rd-party 
+                    printing services. Ironically enough, I discovered that it was more cost effective to buy a small 3d printer 
+                    than to outsource their fabrication. So as classes were staring, I began to order the various hardware components 
+                    necessary to assemble the machine.
+                </p>
+
+                <p>
+                    Slowly, parts began to arrive from the various vendors and with the buzz and excitement of a child on Christmas, 
+                    I began the process of putting together the various sub-assemblies of the system. The following are a few pictures 
+                    of the sub-assemblies:
+                </p>
+
+                <section class="picture-4row">
+                    <img src="photos/HM01-gantryassyv3.2.jpeg" alt="v3.2 assembled gantry">
+                    <img src="photos/hm01-y-axisbushingblock.jpeg" alt="y-axis bushing blocks">
+                    <img src="photos/hm01-y-axisbushingblockapart.jpeg" alt="y-axis bushing blocks, dissadembled">
+                    <img src="photos/hm01-z-axislsnutblock.jpeg" alt="z-axis LEAD nut block">
+                </section>
+
+            </div>
+
+            <div id="project-sidebar">
+                <h2>Posts</h2>
+                <ul>
+                    <li><p>Post 1 - An Old Friend</p></li>
+                    <li><a href="project2-page2.html">Post 2 - Compliant Print Bed Supports</a></li>
+                </ul>
+            </div>
         </div>
 
         <footer id="main-footer">
