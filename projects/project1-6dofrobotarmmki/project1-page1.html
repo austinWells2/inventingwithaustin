@@ -38,7 +38,65 @@
                 <h5>Austin Wells - February 28, 2022</h5>
                 
                 <p>
+                    During the Fall 2021 semester, I was enrolled in "Mechatronics Design", an introductory 
+                    course in mechatronics engineering. As part of this course, students were given the rather 
+                    nebulous task of applying what they had learned in building mechatronics systems for a 
+                    final group project. Assessment would be based on three categories: interest level, presentation 
+                    quality, and technical sophistication. 
+                </p>
 
+                <p>    
+                    Not wanting to be outdone, one of my friends with similar hobbyist experience and I 
+                    teamed up and set out with the goal of creating the most advanced project of all the 
+                    students in the class. Mooted ideas included a 
+                    <a href = "https://hackaday.com/2021/10/31/building-a-kinetic-sand-art-table/">kinetic sand art table</a>, 
+                    autonomous egg launcher, and more but in the end, we settled on building a more traditional 6 degree-of-freedom 
+                    robot arm as used in many industrial applications. The catch: we had only six weeks to design, 
+                    build, and test the system.
+                </p>
+
+                <p>
+                    To start, we formulated a list of performance specifications and functionalities, ordered by priority. Some of 
+                    the more advanced or ambitious elements of our list were identified as 'stretch' goals while the most essential 
+                    were given full priority. After an initial brainstorming session, we selected solutions to some of the elements 
+                    of the mechanical design and settled on using stepper motors for the primary drive. The inclusion of high-resolution 
+                    encoders was planned to allow closed-loop control, but did not make it into the final design as they could not be 
+                    reliably procured within the build window.
+                </p>
+
+                <p>
+                    On the programing side of things, we identified the need for a joint solution solver, controller firmware, and some 
+                    sort of communication interface between the two. Because the mechnical deisgn was to be driven by the electrical 
+                    systems which were in turn controlled by a microcontroller responding to commands sent by the operator based on the 
+                    output of the solution engine, it was decided that we would work from opposite ends: one starting with dimensioned designs 
+                    for the mechanical hardware and the other starting with the joit solution engine.
+                </p>
+
+                <h3>Mechanical Design</h3>
+                <P>
+
+                </P>
+
+                <h3>Electrical Deisgn</h3>
+                <p>
+
+                </p>
+
+                <h3>Firmware</h3>
+                <p>
+
+                </p>
+
+                <h3>Kinematics Engine</h3>
+                <p>
+                    Complex robotic systems are often described as chains of interconnected links driven 
+                    at joint interfaces using a Denavit-Hartenburg frame. From this model, the combined 
+                    position and direction vector for the end effector can be determined based on the 
+                    transformations induced by different joint angle sets, a method called forward kinematics. 
+                    Conversely, the joint angle set(s) required to locate and orient the end effector can be 
+                    computed with greater difficulty using a method called inverse kinematics. Inverse kinematics 
+                    problems have numerical solutions for solving end locations, utilizing a jacobian inverse 
+                    technique. However,
                 </p>
 
             </div>
