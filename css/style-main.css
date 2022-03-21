@@ -66,6 +66,22 @@ body{
     padding-top: 30px;
 }
 
+#warning{
+    background: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#warning p{
+    width: 60%;
+    margin-left: 20%;
+    color: yellow;
+}
+
+#warning h1{
+    color: yellow;
+}
+
 #main{
     float: left;
     width: 70%;
