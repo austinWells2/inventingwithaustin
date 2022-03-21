@@ -96,9 +96,28 @@
                     Conversely, the joint angle set(s) required to locate and orient the end effector can be 
                     computed with greater difficulty using a method called inverse kinematics. Inverse kinematics 
                     problems have numerical solutions for solving end locations, utilizing a jacobian inverse 
-                    technique. However,
+                    technique. However, after struggling to integrate IKFast and other inverse kinematics engines with 
+                    our robot firmware, we realized that it was improbable that we would have this element of code 
+                    running in time for the presentation.
                 </p>
 
+                <p>
+                    Our soulution was to write a multi-layer optimization algorithm based on the forward 
+                    kinematics of the robot frame. The program worked by taking user input for the desired 
+                    location and orientation of the end effector plus acceptable error, search granularity 
+                    and depth parameters, storing the output to a pose queue. The user could then step through this 
+                    queue and write the joint position data to the arm via a serial interface. Inefficient, perhaps; 
+                    effective, certainly. In testing and presentation, poses acurate to millimeters of variation were 
+                    reliably computed in a matter of minutes with the program parsing thousands of joint combinations 
+                    every second.
+                </p>
+
+                <p>
+                    While the program was usefull for computing end effector positions, the nature of forward 
+                    kinematic engines precluded its use for real-time control of the arm. Furthermore, the serial interface 
+                    was not completed in time for the presentation and so poses had to be transcribed from the program terminal 
+                    to the serial monitor running the arm.
+                </p>
             </div>
 
             <div id="project-sidebar">
